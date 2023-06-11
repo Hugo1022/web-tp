@@ -1,0 +1,670 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.conteiner1 {
+    min-height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template:
+        "a" 60px
+        "b" 60px
+        "c" auto
+        "d" 60px;
+}
+
+.topbar {
+    grid-area: a;
+    display: grid;
+    grid-template:
+        "a b c";
+}
+
+.topbar-logo {
+    grid-area: a;
+    display: grid;
+    grid-template:
+        "a";
+}
+
+.topbar-logo-ok {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-logo {
+    width: 50px;
+}
+
+.topbar-buscador {
+    grid-area: b;
+    display: grid;
+    grid-template:
+        "a";
+}
+
+.topbar-buscador-ok {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-buscador {
+    width: 90%;
+    height: 30%;
+    border-radius: 30px;
+}
+
+.topbar-botonlogin {
+    grid-area: c;
+    display: grid;
+    grid-template:
+        "c b a";
+    ;
+}
+
+.topbar-botonlogin-login {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-botonlogin-register {
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar-botonlogin-inicio {
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.sidebar {
+    gap: 20px;
+    grid-area: b;
+    display: grid;
+    grid-template:
+        "d a"
+        "b c";
+}
+
+.sidebar-item0 {
+    grid-area: d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-item1 {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-productos1 {
+    width: 150px;
+    height: 50px;    
+}
+
+.sidebar-item2 {
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-item3 {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    grid-area: c;
+    display: grid;
+    grid-template:
+        "a";
+}
+
+.div-main {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-main-form {
+    background-image: 
+        linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url(images/portada.jpeg);
+    display: grid;
+    grid-template:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f";
+}
+
+.div-main-form-titulo {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-main-form-email {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-main-form-password {
+    grid-area: d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-main-form-enviar {
+    grid-area: f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-form {
+    border-radius: 30px;
+    width: 50%;
+    height: 30%;
+}
+
+.button-enviar {
+    width: 80%;
+    height: 50%;
+}
+
+.imagen-portada {
+    width: 450px;
+}
+
+.footer {
+    gap: 20px;
+    grid-area: d;
+    display: grid;
+    grid-template:
+        "a b c"
+        "a b d";
+}
+
+.footer-camperas {
+    gap: 20px;
+    grid-area: d;
+    display: grid;
+    grid-template:
+        "a b c"
+        "a b d";
+}
+
+.footer-formaspago {
+    grid-area: a;
+    display: grid;
+    grid-template:
+        "a a a"
+        "b c d";
+}
+
+.footer-formaspago-titulo {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-formaspago-mp {
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-formaspago-tarjeta {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-formaspago-efectivo {
+    grid-area: d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-footer {
+    width: 20px;
+}
+
+.footer-redes {
+    grid-area: b;
+    display: grid;
+    grid-template:
+        "a a a"
+        "b c d";
+}
+
+.footer-redes-titulo {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-redes-ig {
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-redes-fb {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-redes-wa {
+    grid-area: d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contacto {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-contacto {
+    height: 30px;
+}
+
+.footer-quienes {
+    grid-area: d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner2 {
+    min-height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template:
+        "a" 60px
+        "b" auto
+        "d"60px;
+}
+
+.main2 {
+    gap: 30px;
+    grid-area: b;
+    display:grid;
+    grid-template:
+        "a"
+        "b"
+        "c";
+}
+
+.image-productos {
+    width: 100%;
+}
+
+.footer2 {
+    gap: 20px;
+    grid-area: d;
+    display: grid;
+    grid-template:
+        "a b c"
+        "a b d";
+}
+
+.main2-camperas {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main2-remeras {
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main2-calzas {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-camperas {
+    min-height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template:
+        "a" 60px
+        "b" 200px
+        "c" auto
+        "d" 60px;
+}
+
+.main-camperas {
+    gap: 20px;
+    grid-area: c;
+    display:grid;
+    grid-template:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f";
+}
+
+.image-camperas {
+    width: 300px;
+}
+
+.main-camperas-1 {
+    grid-area: a;
+    display: grid;
+    grid-template:
+        "a"
+        "b";
+}
+
+.main-camperas-1-imagen {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-comprar {
+    grid-area: b;
+    display: grid;
+    grid-template:
+    "a"
+    "b";
+}
+
+.div-precio {
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-compra {
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-camperas-2 {
+    grid-area: b;
+    display: grid;
+    grid-template:
+        "a"
+        "b";
+}
+
+.main-camperas-3 {
+    grid-area: c;
+    display: grid;
+    grid-template:
+        "a"
+        "b";
+}
+
+.main-camperas-4 {
+    grid-area: d;
+    display: grid;
+    grid-template:
+        "a"
+        "b";
+}
+
+.main-camperas-5 {
+    grid-area: e;
+    display: grid;
+    grid-template:
+        "a"
+        "b";
+}
+
+.main-camperas-6 {
+    grid-area: f;
+    display: grid;
+    grid-template:
+        "a"
+        "b";
+}
+
+.sidebar-camperas {
+    grid-area: b;
+    display: grid;
+    grid-template:
+        "a"
+        "b"
+        "c";
+
+}
+
+.sidebar-camperas2 {
+    gap: 5px;
+    grid-area: b;
+    display: grid;
+    grid-template:
+        "e e"
+        "d a"
+        "b c"
+        "f f";
+}
+
+@media (min-width: 600px) {
+    .conteiner1 {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "a a a" 80px
+            "b c c" auto
+            "b d d" 50px/
+            200px auto;
+    }
+
+    .topbar-botonlogin {
+        grid-area: c;
+        display: grid;
+        grid-template:
+            "c b a";
+    }
+
+    .topbar-logo {
+        grid-area: a;
+        display: grid;
+        grid-template:
+            "a";
+    }
+
+    .imagen-logo {
+        width: 80px;
+    }
+
+    .topbar-buscador {
+        grid-area: b;
+        display: grid;
+        grid-template:
+            "a";
+    }
+
+    .sidebar {
+        gap: 5px;
+        grid-area: b;
+        display: grid;
+        grid-template:
+            "d"
+            "a"
+            "b"
+            "c";
+    }    
+
+    .main2 {
+        gap: 30px;
+        grid-area: b;
+        display:grid;
+        grid-template:
+            "a b c";
+    }
+
+    .conteiner-camperas {
+        min-height: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "a a" 60px
+            "b c" auto
+            "d d" 60px/
+            200px auto;
+    }
+
+    .main-camperas {
+        gap: 30px;
+        grid-area: c;
+        display:grid;
+        grid-template:
+            "a b"
+            "c d"
+            "e f";
+    }
+
+    .button-productos1 {
+        width: 150px;
+        height: 150px;    
+    }
+
+    .sidebar-camperas2 {
+        gap: 5px;
+        grid-area: b;
+        display: grid;
+        grid-template:
+            "d"
+            "a"
+            "b"
+            "c";
+    }
+    
+}
+
+@media (min-width: 900px) {
+    .conteiner1 {
+        display: grid;
+        gap: 10px;
+        grid-template:
+            "a a a" 80px
+            "b c d" auto
+            "b c d" 50px/
+            200px auto 200px;
+    }
+
+    .topbar-logo {
+        grid-area: a;
+        display: grid;
+        grid-template:
+            "a b c";
+    }
+
+    .topbar-botonlogin {
+        grid-area: c;
+        display: grid;
+        grid-template:
+            "d c b a";
+    }
+
+    .imagen-portada {
+        width: 800px;
+    }    
+
+    .footer {
+        grid-area: d;
+        display: grid;
+        grid-template:
+            "e"
+            "f"
+            "g"
+            "a"
+            "b"
+            "c"
+            "d"
+            "h";
+    }
+
+    .button-contacto {
+        width: 150px;
+        height: 50px;
+    }
+
+    .main-camperas {
+        gap: 30px;
+        grid-area: c;
+        display:grid;
+        grid-template:
+            "a b c"
+            "d e f";
+    }
+
+    .footer-redes {
+        grid-area: b;
+        display: grid;
+        grid-template:
+            "a a a a a"
+            "e b c d f";
+    }
+
+    .footer-formaspago {
+        grid-area: a;
+        display: grid;
+        grid-template:
+            "a a a a a"
+            "e b c d f";
+    }
+    
+}
